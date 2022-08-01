@@ -17,7 +17,7 @@ class SignalWrapper extends StatelessWidget {
 
   Widget _buildContent(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 16.h, bottom: 16.h, left: 16.w, right: 16.w),
+      padding: EdgeInsets.only(top: 16.w, bottom: 16.w, left: 16.w, right: 16.w),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -25,7 +25,7 @@ class SignalWrapper extends StatelessWidget {
             DateFormat('dd MMMM yyyy, HH:mm').format(signal.date),
             style: TextStyle(fontSize: 12.w, color: whiteColor.withOpacity(0.5)),
           ),
-          SizedBox(height: 8.h),
+          SizedBox(height: 8.w),
           Row(
             children: [
               if (!service<SubscriptionState>().isSubscribed && signal.isPremium)
@@ -40,7 +40,7 @@ class SignalWrapper extends StatelessWidget {
                     '${signal.one.shortTitle}/${signal.two.shortTitle}',
                     style: TextStyle(fontSize: 16.w, color: whiteColor),
                   ),
-                  SizedBox(height: 4.h),
+                  SizedBox(height: 4.w),
                   Text(
                     signal.one.title,
                     style: TextStyle(fontSize: 12.w, color: whiteColor.withOpacity(0.5)),
@@ -82,7 +82,7 @@ class SignalWrapper extends StatelessWidget {
         if (!service<SubscriptionState>().isSubscribed && signal.isPremium) service<BottomAppBarState>().changePage(1);
       },
       child: Container(
-        height: 90.w,
+        height: 97.w,
         width: MediaQuery.of(context).size.width - 2 * 16.w,
         decoration: BoxDecoration(
           color: backgroundColor,
