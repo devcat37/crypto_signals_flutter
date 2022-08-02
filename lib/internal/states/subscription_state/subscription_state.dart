@@ -1,4 +1,5 @@
 import 'package:crypto_signals_july/internal/utils/infrastructure.dart';
+import 'package:crypto_signals_july/main.dart';
 import 'package:mobx/mobx.dart';
 
 part 'subscription_state.g.dart';
@@ -13,8 +14,9 @@ abstract class _SubscriptionStateBase with Store {
   Future<bool> subscribe() async {
     // Задержка для тестирования.
     await Future.delayed(aSecond * 2);
+    final result = await purchase();
 
-    isSubscribed = true;
+    isSubscribed = result;
     return isSubscribed;
   }
 
@@ -22,8 +24,9 @@ abstract class _SubscriptionStateBase with Store {
   Future<bool> restore() async {
     // Задержка для тестирования.
     await Future.delayed(aSecond * 2);
+    final result = await restore();
 
-    isSubscribed = true;
+    isSubscribed = result;
     return isSubscribed;
   }
 }

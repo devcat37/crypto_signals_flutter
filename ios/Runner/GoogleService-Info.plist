@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>380114605401-d0qt9ur9rlml9idjpm93b4c0f1kleob8.apps.googleusercontent.com</string>
+	<string>457211598097-u29k3ru962uqi5pi743f8tct59k8nnu1.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.380114605401-d0qt9ur9rlml9idjpm93b4c0f1kleob8</string>
+	<string>com.googleusercontent.apps.457211598097-u29k3ru962uqi5pi743f8tct59k8nnu1</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBqTAUGeA3KFwIQ60hZAr6mp4SdEdWJrO4</string>
+	<string>AIzaSyAT7p7ptvBvwysx77dGqRX31rEN40-YhAI</string>
 	<key>GCM_SENDER_ID</key>
-	<string>380114605401</string>
+	<string>457211598097</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.devcat37.cryptosignals</string>
+	<string>com.crypsigtrad.ing</string>
 	<key>PROJECT_ID</key>
-	<string>crypto-signals-7a8bb</string>
+	<string>crypto-trading-signals-55225</string>
 	<key>STORAGE_BUCKET</key>
-	<string>crypto-signals-7a8bb.appspot.com</string>
+	<string>crypto-trading-signals-55225.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:380114605401:ios:083f275d1248e2e1a42848</string>
+	<string>1:457211598097:ios:22b119fc606e3f42fb68b0</string>
+	<key>DATABASE_URL</key>
+	<string>https://crypto-trading-signals-55225-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>
