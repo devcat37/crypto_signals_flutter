@@ -16,7 +16,7 @@ class TradingScreenView extends StatefulWidget {
   State<TradingScreenView> createState() => _TradingScreenViewState();
 }
 
-class _TradingScreenViewState extends State<TradingScreenView> {
+class _TradingScreenViewState extends State<TradingScreenView> with AutomaticKeepAliveClientMixin {
   /// Прогрузился WebView или нет.
   bool isLoaded = false;
 
@@ -58,4 +58,7 @@ class _TradingScreenViewState extends State<TradingScreenView> {
       body: _buildContent(context),
     );
   }
+
+  @override
+  bool get wantKeepAlive => true;
 }
